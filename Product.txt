@@ -1,0 +1,11 @@
+1;Thùng bia Larue;300000;240000;0;C:/Users/HOANG/Downloads/thung_bia_larue.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Bắc Đà Nẵng;Hòa Khánh Bắc, Liên Chiểu ,Đà Nẵng
+2;Thùng bia HuaDa;340006;280000;0;C:\\Users\\HOANG\\Downloads\\thung_bia_huda.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Hòa Khánh Bắc, Liên Chiểu ,Đà Nẵng
+3;Chai Pepsi;4000;5000;7;C:/Users/HOANG/Downloads/chai_pepsi.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Sơn Nam Trà, Liên Chiểu ,Đà Nẵng
+4;Chai String;4000;5000;69;C:\\Users\\HOANG\\Downloads\\chai_sting.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Liên Chiểu ,Đà Nẵng
+5;Trà sữa trân châu đường đen;30009;20000;1;D:\\winform\\QuanLyQuanCafe\\QuanLyPhongBan\\Image\\tra_sua_chan_chau_duong_den.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Liên Chiểu ,Đà Nẵng
+6;Chai Bia Heniken;10000;8005;10;D:\\winform\\QuanLyQuanCafe\\QuanLyPhongBan\\Image\\bia_heniken.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Liên Chiểu ,Đà Nẵng
+7;Thùng Bia Budweisẻ;300000;240000;8;D:\\winform\\QuanLyQuanCafe\\QuanLyPhongBan\\Image\\Bia_Budweiser.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Liên Chiểu ,Đà Nẵng
+8;Chai bia San Migue;12000;10000;8;D:\\winform\\QuanLyQuanCafe\\QuanLyPhongBan\\Image\\Bia_San_Miguel_Red_Horse.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Liên Chiểu ,Đà Nẵng
+9;Thùng bia Tiger;260000;300000;9;D:/winform/QuanLyQuanCafe/QuanLyPhongBan/Image/bia_tiger.jpg;2023-08-01;2025-08-01;Nước uống;Chi nhánh Pepsi Phía Nam Đà Nẵng;Liên Chiểu, Đà Nẵng
+10;Trà sữa Trân Châu Trắng;30000;20000;9;D:/winform/QuanLyQuanCafe/QuanLyPhongBan/Image/tra_sua_chan_chau_trang.jpg;2023-08-01;2025-08-01;Nước uống;Công ty ăn vặt Thái Nguyên;Hòa Khánh, Liên Chiểu,Đà Nẵng
+11;Nước uống đóng chai;10000;5000;3;C:/Users/HOANG/Downloads/noImage.png;2023-09-15;2025-09-15;Nước uống;Trường Giang;Trung QUốc

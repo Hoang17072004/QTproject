@@ -1,0 +1,2158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1257</width>
+    <height>642</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family:inherit;
+	background-color: white;
+	font-weight:500;
+
+}
+#MainWindow{
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: white;
+}
+#menubar{
+	background-color: #0090da;
+	color: black;
+	font-size: 18px;
+	padding: 6px 0;
+font-weight:500;
+}
+
+QMenu{
+	background-color: #0090da;
+	color: white;
+	font-size: 18px;
+selection-background-color: #15419d;
+	
+}
+
+QMenu:hover{
+	background-color:#15419d;
+color:red;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>1257</width>
+     <height>599</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="skMainContain">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1231</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="currentIndex">
+     <number>9</number>
+    </property>
+    <widget class="QWidget" name="pageSaleProduct">
+     <property name="styleSheet">
+      <string notr="true">#twNumberBill{
+	background-color: #237fcd;
+	color: white;
+	font-size: 18px;
+}
+#btnPayBill{
+	background-color: #237fcd;
+	color: white;
+	font-size: 24px;
+	padding: 10px;
+}
+
+QLabel{
+	font-size:14px;
+}
+QSpinBox{
+	padding:4px;
+	font-size:12px;
+}
+#btnPayBill:hover{
+		background-color:#15419d;
+	}</string>
+     </property>
+     <widget class="QScrollArea" name="scrContainProducts">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>771</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>767</width>
+         <height>497</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="leSearchProductBill">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 18px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Tìm kiếm theo tên sản phẩm</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtnSearchProductBill">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(10, 255, 51);
+color: red;
+font-size: 18px;
+
+border-radius: 4px;</string>
+      </property>
+      <property name="text">
+       <string>Tìm kiếm</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtnDeleteBill">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>10</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 85, 255);
+font-size: 16px;
+padding: 8px;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Xóa hóa đơn</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="gBContainBill">
+      <property name="geometry">
+       <rect>
+        <x>799</x>
+        <y>19</y>
+        <width>411</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>GroupBox</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lgoutbtn">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+border-radius: 3px;
+background-color: rgb(66, 132, 0);</string>
+      </property>
+      <property name="text">
+       <string>Đăng xuât</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageTransaction">
+     <widget class="QCalendarWidget" name="cldTimeTransaction">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>311</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbTimeTransaction">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:16px;
+font-weight: 600;</string>
+      </property>
+      <property name="text">
+       <string>Thời gian</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lESeachSupplier">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Tìm kiếm theo tên nhà cung cấp</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>290</y>
+        <width>231</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;</string>
+      </property>
+      <property name="title">
+       <string>Trạng thái</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>29</y>
+         <width>211</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lbChoiceTimeMonth">
+          <property name="text">
+           <string>Lựa chọn</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cbChoiceTimeMonthTransactionInfo"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lbFromDateTransactionInfo">
+          <property name="text">
+           <string>Từ ngày</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDateEdit" name="dtFromDateTransactionInfo"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lbToDateTransactionInfo">
+          <property name="text">
+           <string>Đến ngày</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDateEdit" name="dtToDateTransactionInfo"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="btnSearchTransactionBydate">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>163</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: green;
+color: white;
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string>Dữ liệu</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="tbListTransaction">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>861</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnUpdateTransaction">
+      <property name="geometry">
+       <rect>
+        <x>829</x>
+        <y>10</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: blue;
+color: white;
+border-radius: 4px;</string>
+      </property>
+      <property name="text">
+       <string>Cập nhật</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>19</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 24px;
+font-weight: 600;
+</string>
+      </property>
+      <property name="text">
+       <string>Nhập hàng</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lESTransactionSearchProduct">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:20px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBAddProductTransaction">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>20</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;
+background-color: #11c7b1;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Thêm sản phẩm</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tWListTransactionGoods">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>761</width>
+        <height>281</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBAddSuplierTransaction">
+      <property name="geometry">
+       <rect>
+        <x>1029</x>
+        <y>23</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:16px;
+background-color: #f0be0a;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Thêm nhà sản xuất</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>79</y>
+        <width>401</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px;</string>
+      </property>
+      <property name="title">
+       <string>Nhập Hàng</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>387</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lbEmployeeNameTransaction">
+          <property name="text">
+           <string>Tên nhân viên</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lbProducerTransactionName">
+          <property name="text">
+           <string>Tên nhà cung cấp</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="cbSublierTransactionName"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lbTransactionPay">
+          <property name="text">
+           <string>Tổng tiền</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="dsTransactionPay"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="lbTimeTransaction_2">
+          <property name="text">
+           <string>Thời gian</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QDateTimeEdit" name="dtTimeTranSaction"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cbEmployeeNameTransaction"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pBSaveTransaction">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>210</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #0dac50;
+color: white;
+border-radius: 4px;</string>
+       </property>
+       <property name="text">
+        <string>Lưu</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="scAcontainListProductTransaction">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>59</y>
+        <width>761</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>759</width>
+         <height>199</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>19</y>
+        <width>311</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:20px;</string>
+      </property>
+      <property name="title">
+       <string>Tìm kiếm</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>39</y>
+         <width>281</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="leSearchBillByBillID"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="leSearchBillByCustomerName"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="leSeachBillByEmployeeName"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>349</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:20px;</string>
+      </property>
+      <property name="title">
+       <string>Thời gian</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>29</y>
+         <width>271</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lbSeachBillByFromDate">
+          <property name="text">
+           <string>Từ ngày</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QDateEdit" name="deSearchBillByFromDate"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lbSeachBillToDate">
+          <property name="text">
+           <string>Đến ngày</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDateEdit" name="deSearchBillToDate"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="btnSearchBillBydate">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>120</y>
+         <width>112</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: blue;
+color: white;
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string>Dữ liệu</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="tbDetailBill">
+      <property name="geometry">
+       <rect>
+        <x>375</x>
+        <y>31</y>
+        <width>831</width>
+        <height>511</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtUpdateListBill">
+      <property name="geometry">
+       <rect>
+        <x>179</x>
+        <y>280</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(25, 60, 255);
+border-radius: 4px;</string>
+      </property>
+      <property name="text">
+       <string>Cập nhật</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>19</y>
+        <width>341</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px;</string>
+      </property>
+      <property name="title">
+       <string>Tìm kiếm</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>29</y>
+         <width>311</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lbTypeProductInProductInfo">
+          <property name="text">
+           <string>Loại sản phẩm</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="leSearchTypeProductInProductInfo"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lbProductNameInProductInfo">
+          <property name="text">
+           <string>Tên sản phẩm</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="leSearchProductNameInProductInfo"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lbDetailProductPrice">
+          <property name="text">
+           <string>Giá tiền</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="dbDetailProductPrice">
+          <property name="maximum">
+           <double>10000000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>400</y>
+        <width>341</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px;</string>
+      </property>
+      <property name="title">
+       <string>Tình trạng</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>29</y>
+         <width>311</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="cbOutStockInProductInfo">
+          <property name="text">
+           <string>Hết hàng</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="cbNearlySoldOutInProductInfo">
+          <property name="text">
+           <string>Gần hết hàng</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pBSeachByQuantityProduct">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>113</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #0beb08;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Dữ liệu</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="tbProductInfo">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>370</y>
+        <width>761</width>
+        <height>181</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="gBContainChartProduct">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>189</y>
+        <width>321</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Thời gian biểu đồ</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>301</width>
+         <height>126</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Từ ngày</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateDrawChartProductRankFrom"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Đến ngày</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateDrawChartProductRankTo"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pBDrawTopSellProductWithTwoDate">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>153</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1208eb;
+color: white;
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string>Xem biểu đồ</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="scContainChartTopSellProduct">
+      <property name="geometry">
+       <rect>
+        <x>399</x>
+        <y>19</y>
+        <width>781</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>779</width>
+         <height>299</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnUpdateListProduct">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>330</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+background-color: rgb(26, 255, 10);
+border-radius: 4px;</string>
+      </property>
+      <property name="text">
+       <string>Cập nhật</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLineEdit" name="leSearchSuppierInfo">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="gbContainGrapPercentSupplier">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>491</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Tỉ lệ phần trăm Nhà cung cấp</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tbSupplierInfo">
+      <property name="geometry">
+       <rect>
+        <x>575</x>
+        <y>71</y>
+        <width>621</width>
+        <height>481</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnUpdateSuplier">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>10</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 4px;
+background-color: rgb(7, 86, 255);
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Cập nhật</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLineEdit" name="leSeachInfoEmployeeByName">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>23</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableListEmployee">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>641</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="gbContainListNotify">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>19</y>
+        <width>501</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar::chunk {
+    background-color: red;
+    width: 10px;
+
+}
+ #QListWidget QScrollBar {
+     border: 2px solid grey;
+     background: #32CC99;
+     width: 15px;
+     margin: 22px 0 22px 0;
+ }</string>
+      </property>
+      <property name="title">
+       <string>Thông báo</string>
+      </property>
+      <widget class="QListWidget" name="containlistnotify">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>251</y>
+         <width>451</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QScrollBar:horizontal {
+
+    border: 2px solid #f8f7f7;
+    background: #32CC99;
+    height: 15px;
+    margin: 0px 10px 0 10px;
+}
+QScrollBar::handle:horizontal {
+    background: white;
+    min-width: 10px;
+}
+QScrollBar::add-line:horizontal {
+    border: 2px solid #f8f7f7;
+    background: #32CC99;
+    width: 10px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: 2px solid #f8f7f7;
+    background: #32CC99;
+    width: 10px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="logoInNotify">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>35</y>
+         <width>201</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/_161b88ae-8a07-4f01-a604-bb4a1b69b921.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbHeadNotify">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>45</y>
+         <width>201</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/_fcb4db05-5bbd-47b7-a001-a2bcb4b8e8ec.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnaddnotify">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>210</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #339935;
+color: white;
+border-radius: 2px;</string>
+       </property>
+       <property name="text">
+        <string>Thêm thông báo</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnAddEmployee">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>20</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 6px;
+background-color: #52c653;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Thêm nhân viên</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLineEdit" name="leSearchCustomer">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>351</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>55</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Từ ngày</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>50</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Đến ngày</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="defromdateSearchCustomer">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>110</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="deTodateSearchCustomer">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>110</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="gbContailComment">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>19</y>
+        <width>461</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>Bình luận của khách hàng</string>
+      </property>
+      <widget class="QListWidget" name="listShowComment">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>261</y>
+         <width>401</width>
+         <height>261</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>38</x>
+         <y>45</y>
+         <width>181</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/_edcd94e7-4317-46d4-ae54-5025992003de.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>45</y>
+         <width>181</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/_8c6f55b5-d5c3-45c8-98b2-831c40eaa415.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnaddcomment">
+       <property name="geometry">
+        <rect>
+         <x>279</x>
+         <y>213</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: blue;
+color: white;
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string>Thêm bình luận</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="tableListCustomer">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>100</y>
+        <width>671</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>211</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Các lựa chọn tìm kiếm</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSeachCustomerByDate">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>50</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: green;
+color: white;
+border-radius: 3px;
+padding: 4px;</string>
+      </property>
+      <property name="text">
+       <string>Dữ liệu</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtnUpdateCustomer">
+      <property name="geometry">
+       <rect>
+        <x>619</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+border-radius: 4px;
+background-color: rgb(8, 255, 185);</string>
+      </property>
+      <property name="text">
+       <string>Cập nhật</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>9</y>
+        <width>631</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Kết quả bán hàng hôm nay</string>
+      </property>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>45</y>
+         <width>49</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/money-bag (1).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>40</y>
+         <width>171</width>
+         <height>83</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="lbnumberbilltoday">
+          <property name="styleSheet">
+           <string notr="true">font-size: 16px;
+font-weight: 600;</string>
+          </property>
+          <property name="text">
+           <string>0 hóa đơn</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbrevenue">
+          <property name="styleSheet">
+           <string notr="true">font-size:24px;
+color: blue;</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="styleSheet">
+           <string notr="true">color: gray;
+font-size: 18px;</string>
+          </property>
+          <property name="text">
+           <string>Doanh thu</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>45</y>
+         <width>61</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/pay.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>40</y>
+         <width>221</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="lbnumberbilltoday_2">
+          <property name="styleSheet">
+           <string notr="true">font-size: 16px;
+font-weight: 600;</string>
+          </property>
+          <property name="text">
+           <string>Lãi suất từ bán sản phẩm</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbinterest">
+          <property name="styleSheet">
+           <string notr="true">font-size:24px;
+color: blue;</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="styleSheet">
+           <string notr="true">color: gray;
+font-size: 18px;</string>
+          </property>
+          <property name="text">
+           <string>Lãi xuất</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>9</y>
+        <width>471</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Lựa chọn thống kê</string>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>35</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Theo</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cbChoiceDrawGrapRevenue">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>73</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pbtnUpdateOverview">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>70</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: blue;
+color: white;
+border-radius: 4px;</string>
+       </property>
+       <property name="text">
+        <string>Cập nhật</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="gbContainGrapRevenue">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>160</y>
+        <width>1161</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1159</width>
+         <height>369</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>15</y>
+        <width>631</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../Downloads/OIG (2).jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>20</y>
+        <width>551</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+</string>
+      </property>
+      <property name="title">
+       <string>HG Smart</string>
+      </property>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>531</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/_161b88ae-8a07-4f01-a604-bb4a1b69b921.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>40</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 24px;
+color: white;
+background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Đăng nhập</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leusernamelogin">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>371</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font-size: 20px;
+
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>Tên đăng nhập</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>90</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/iconuser.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pbtLogin">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>230</y>
+         <width>211</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+border-radius: 6px;
+background-image: url(C:/Users/HOANG/Downloads/puple2.jpg);</string>
+       </property>
+       <property name="text">
+        <string>Đăng nhập</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lepasswordlogin">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>160</y>
+         <width>371</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Mật khẩu</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>160</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 6px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../Downloads/lock.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbgiflogin">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>300</y>
+         <width>401</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnChangePasswordLogin">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>240</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: rgb(3, 100, 255);
+color: rgb(255, 255, 255);
+border-radius: 4px;</string>
+       </property>
+       <property name="text">
+        <string>Đổi mật khẩu</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1257</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mnOverview">
+    <property name="font">
+     <font>
+      <family>inherit</family>
+      <pointsize>-1</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Tổng quan</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="mnProduct">
+    <property name="title">
+     <string>Sản phẩm</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="mnBill">
+    <property name="title">
+     <string>Hóa đơn</string>
+    </property>
+    <addaction name="atNewBill"/>
+    <addaction name="atListBill"/>
+   </widget>
+   <widget class="QMenu" name="mnPartner">
+    <property name="title">
+     <string>Đối tác</string>
+    </property>
+    <addaction name="atCustomer"/>
+    <addaction name="atSupllier"/>
+   </widget>
+   <widget class="QMenu" name="mnEmployee">
+    <property name="title">
+     <string>Nhân viên</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="mnImportGood">
+    <property name="title">
+     <string>Nhập hàng</string>
+    </property>
+    <addaction name="atNewImportGood"/>
+    <addaction name="atListImportGood"/>
+   </widget>
+   <addaction name="mnOverview"/>
+   <addaction name="mnProduct"/>
+   <addaction name="mnBill"/>
+   <addaction name="mnPartner"/>
+   <addaction name="mnEmployee"/>
+   <addaction name="mnImportGood"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>inherit</family>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <action name="aBusinessCategory">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/category.png</normaloff>../../../Downloads/category.png</iconset>
+   </property>
+   <property name="text">
+    <string>Doanh mục</string>
+   </property>
+  </action>
+  <action name="acCategoryGoods">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/category.png</normaloff>../../../Downloads/category.png</iconset>
+   </property>
+   <property name="text">
+    <string>Doanh mục</string>
+   </property>
+  </action>
+  <action name="PriceSettingGoods">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/exit-top-right.png</normaloff>../../../Downloads/exit-top-right.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thiết lập giá</string>
+   </property>
+  </action>
+  <action name="inventoryControlGoods">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/bag.png</normaloff>../../../Downloads/bag.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kiểm kho</string>
+   </property>
+  </action>
+  <action name="atOrder">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/bed.png</normaloff>../../../Downloads/bed.png</iconset>
+   </property>
+   <property name="text">
+    <string>Đặt hàng</string>
+   </property>
+  </action>
+  <action name="atBill">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/bill.png</normaloff>../../../Downloads/bill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hóa đơn</string>
+   </property>
+  </action>
+  <action name="atBillLading">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/bill (1).png</normaloff>../../../Downloads/bill (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Vận đơn</string>
+   </property>
+  </action>
+  <action name="acReturns">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/undo.png</normaloff>../../../Downloads/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trả hàng</string>
+   </property>
+  </action>
+  <action name="acImportGoods">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/shopping-cart (1).png</normaloff>../../../Downloads/shopping-cart (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Nhập hàng</string>
+   </property>
+  </action>
+  <action name="atReturnImportedGoods">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/upload.png</normaloff>../../../Downloads/upload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trả hàng nhập</string>
+   </property>
+  </action>
+  <action name="atCancelGoods">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/hand.png</normaloff>../../../Downloads/hand.png</iconset>
+   </property>
+   <property name="text">
+    <string>Xuất hủy</string>
+   </property>
+  </action>
+  <action name="actionCustomer">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/user.png</normaloff>../../../Downloads/user.png</iconset>
+   </property>
+   <property name="text">
+    <string>Khách hàng</string>
+   </property>
+  </action>
+  <action name="atProducer">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/user (1).png</normaloff>../../../Downloads/user (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Nhà cung cấp</string>
+   </property>
+  </action>
+  <action name="DeliverryPartner">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+   </property>
+   <property name="text">
+    <string>Đối tác giao hàng</string>
+   </property>
+  </action>
+  <action name="atEmployee">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/user (1).png</normaloff>../../../Downloads/user (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Nhân viên</string>
+   </property>
+  </action>
+  <action name="atTimeKeeping">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/category.png</normaloff>../../../Downloads/category.png</iconset>
+   </property>
+   <property name="text">
+    <string>Chấm công</string>
+   </property>
+  </action>
+  <action name="atPayroll">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/cells (1).png</normaloff>../../../Downloads/cells (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Bảng tính lương</string>
+   </property>
+  </action>
+  <action name="acCommitsionTable">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/money-bag.png</normaloff>../../../Downloads/money-bag.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bảng hoa hồng</string>
+   </property>
+  </action>
+  <action name="atGenelralSettings">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/settings.png</normaloff>../../../Downloads/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thiết lập chung</string>
+   </property>
+  </action>
+  <action name="atEndDay">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/pie-chart.png</normaloff>../../../Downloads/pie-chart.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cuối ngày</string>
+   </property>
+  </action>
+  <action name="atReportSell">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/database.png</normaloff>../../../Downloads/database.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bán hàng</string>
+   </property>
+  </action>
+  <action name="atOrderReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/bed.png</normaloff>../../../Downloads/bed.png</iconset>
+   </property>
+   <property name="text">
+    <string>Đặt hàng</string>
+   </property>
+  </action>
+  <action name="acGoodsReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/box (1).png</normaloff>../../../Downloads/box (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Hàng hóa</string>
+   </property>
+  </action>
+  <action name="atCustomerReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/user (1).png</normaloff>../../../Downloads/user (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Khách hàng</string>
+   </property>
+  </action>
+  <action name="atSupplierReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nhà cung cấp</string>
+   </property>
+  </action>
+  <action name="atEmployeeReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/directory.png</normaloff>../../../Downloads/directory.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nhân viên</string>
+   </property>
+  </action>
+  <action name="atSellChanelReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/add-user.png</normaloff>../../../Downloads/add-user.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kênh bán hàng</string>
+   </property>
+  </action>
+  <action name="atFinanceReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/increase.png</normaloff>../../../Downloads/increase.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tài chính</string>
+   </property>
+  </action>
+  <action name="atNewBill">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/shopping-cart (1).png</normaloff>../../../Downloads/shopping-cart (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Tạo mới</string>
+   </property>
+  </action>
+  <action name="atListBill">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/bill.png</normaloff>../../../Downloads/bill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Danh sách</string>
+   </property>
+  </action>
+  <action name="atCustomer">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/user (1).png</normaloff>../../../Downloads/user (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Khách hàng</string>
+   </property>
+  </action>
+  <action name="atSupllier">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nhà cung cấp</string>
+   </property>
+  </action>
+  <action name="atNewImportGood">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/box.png</normaloff>../../../Downloads/box.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tạo mới</string>
+   </property>
+  </action>
+  <action name="atListImportGood">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Downloads/cells.png</normaloff>../../../Downloads/cells.png</iconset>
+   </property>
+   <property name="text">
+    <string>Danh sách</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

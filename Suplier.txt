@@ -1,0 +1,6 @@
+1;Công ty nước giải khát pepsi chi nhánh Đà Nẵng;Hòa Khánh Bắc, Liên Chiểu , Đà Nẵng;0982342871;congtygiaikhacpepsichinhandannang123456@gmail.com
+2;Công ty Nước giải khát Chí Trung;chitrung@gmail.com;0938475921;Liên Chiểu, Đà Nẵng
+3;Công ty giải khát Hàng Hòa;daidangdang@gmail.com;0938492832;Hoàng Hà, Trung Quốc
+4;Phân phối giải khác Phước Hòa;phuochoa@gmail.com;0384938291;Liên Chiểu,Đà Nẵng
+5;Vô danh Nước uống;nonamdrinking@gmail.com;01020304005;Liên Chiểu, Đà Nẵng
+6;Fix hoài không xong;nosuccessfullInfix@gmai.com;0294857382;California , Mỹ
