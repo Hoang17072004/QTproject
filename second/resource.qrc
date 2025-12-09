@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/images/first.jfif</file>
+        <file>assets/images/image.jfif</file>
+        <file>assets/icons/First.png</file>
+        <file>assets/icons/image.jfif</file>
+        <file>assets/icons/second.jfif</file>
+        <file>assets/icons/second.png</file>
+    </qresource>
+</RCC>
